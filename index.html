@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Website</title>
 </head>
+
 <body>
     <div>
-        <div class="logo" >
+        <div class="logo">
             <a href="index.html"><img src="./logo.jpg" alt="logo"></a>
-        </div> 
-        <nav class="nav">   
-                <ul>
-                    <li><a class="nav1">About</a></li>
-                    <li><a class="nav2">How it Works</a></li>
-                    <li><a class="nav3">Pricing</a></li>
-                </ul>
-                <button class="btn-contact">Contact</button>
+        </div>
+
+        <nav class="nav" id="topnav">
+            <div class="Navbar__Link navbar-link-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li class="item"><a class="nav1">About</a></li>
+                <li class="item"><a class="nav2">How it Works</a></li>
+                <li class="item"><a class="nav3">Pricing</a></li>
+                <li>
+                    <button class="btn-contact item button">Contact</button>
+                </li>
+            </ul>
         </nav>
+
     </div>
 
     <!-- //About -->
@@ -29,49 +39,49 @@
             <h1 class="h1st">Reliable, efficient delivery</h1>
             <h1>Powered by Technology</h1>
 
-            <p class="p1">Our Artificial Intelligence powered tools use millions of project 
-            data points
-            to ensure that your project is successful
+            <p class="p1">Our Artificial Intelligence powered tools use millions of project
+                data points
+                to ensure that your project is successful
             </p>
         </div>
         <container class="T3cards">
             <div class="card">
-                <img class="img" src="./images/color.jpg" >
+                <img class="img" src="./images/color.jpg">
                 <div class="text-card">
                     <h2>Reliable</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aliquid error, id adipisci eligendi impedit alias eveniet, 
-                        velit autem eos corporis eum quae veniam dignissimos 
+                    <p class="cards-top">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid error, id adipisci eligendi impedit alias eveniet,
+                        velit autem eos corporis eum quae veniam dignissimos
                         laudantium eaque deleniti rerum repellat.
                     </p>
                 </div>
             </div>
             <div class="card card-mid">
-                <img class="img" src="./images/color2.jpg" >
+                <img class="img" src="./images/color2.jpg">
                 <div class="text-card">
                     <h2>Focused</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aliquid error, id adipisci eligendi impedit alias eveniet, 
-                        velit autem eos corporis eum quae veniam dignissimos 
+                    <p class="cards-top">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid error, id adipisci eligendi impedit alias eveniet,
+                        velit autem eos corporis eum quae veniam dignissimos
                         laudantium eaque deleniti rerum repellat.
                     </p>
                 </div>
             </div>
             <div class="card">
-                <img class="img" src="./images/earth.jpg" >
+                <img class="img" src="./images/earth.jpg">
                 <div class="text-card">
                     <h2>Flexible</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aliquid error, id adipisci eligendi impedit alias eveniet, 
-                        velit autem eos corporis eum quae veniam dignissimos 
+                    <p class="cards-top">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid error, id adipisci eligendi impedit alias eveniet,
+                        velit autem eos corporis eum quae veniam dignissimos
                         laudantium eaque deleniti rerum repellat.
                     </p>
                 </div>
             </div>
-            
+
         </container>
     </section>
 
@@ -85,26 +95,26 @@
         <div class="works-details">
             <div class="grid1">
                 <h1 class="h1st">Operational Workloads</h1>
-                <p class="p1">Optimize write performance with a document data model that 
-                    maps to your application's access patterns. Meet a wide range 
-                    of query requirements via a single query API that supports 
-                    everything from simple lookups to complex processing pipelines 
+                <p class="p1">Optimize write performance with a document data model that
+                    maps to your application's access patterns. Meet a wide range
+                    of query requirements via a single query API that supports
+                    everything from simple lookups to complex processing pipelines
                     for data analytics and transformations.
                 </p>
                 <button class="btn-learn">Learn More</button>
             </div>
-            <img class= "img2" src="./images/tech1.jpg">
+            <img class="img2" src="./images/tech1.jpg">
         </div>
-        
+
     </section>
 
     <!-- //Pricing -->
 
     <div id="between-text">Pricing</div>
-
-    <section class="pricecontain">
+    <div class="scale">
         <h1>Scalable solutions for your needs</h1>
-
+    </div>
+    <section class="pricecontain">
         <div class="priceCards">
             <div class="cardprice">
                 <div class="containerprice">
@@ -114,7 +124,6 @@
                     <div class="cardContent">
                         <ul>
                             <li>1 team member</li>
-                            
                         </ul>
                         <div class="price">
                             <h1>€49</h1> /month
@@ -163,30 +172,30 @@
                 </div>
             </div>
 
-              
+
         </div>
     </section>
 
     <section>
         <div class="modal-bg">
-            
+
             <div class="modal">
                 <span class="modal-close-btn"><b>X</b></span>
                 <h1>Contact us</h1>
-                    <input class="field" type="text" placeholder="Name">
-                    <input class="field" type="email" placeholder="Email">
-                    <textarea class="field" placeholder="Message..." rows="5"></textarea>
+                <input class="field" type="text" placeholder="Name">
+                <input class="field" type="email" placeholder="Email">
+                <textarea class="field" placeholder="Message..." rows="5"></textarea>
                 <button class="btn-submit" type="submit" href="/">Submit</button>
             </div>
             <div class="form-sent">
-                <h1>Form sent.</h1> 
-                <h1>Thank you!</h1> 
+                <h1>Form sent.</h1>
+                <h1>Thank you!</h1>
             </div>
         </div>
 
     </section>
 
-    <footer id="footer">
+    <footer class="footer">
         <div class="footer-text">
             © Loremipsum 2020 - 2023
         </div>
@@ -194,11 +203,12 @@
             <span class="footer-span">Terms</span>
             <span class="footer-span">Cookie Policy</span>
             <span class="footer-span">Privacy Policy</span>
-            <span class="footer-span">License</span> 
+            <span class="footer-span">License</span>
         </div>
     </footer>
-    
+
 
     <script src="app.js"></script>
 </body>
+
 </html>
