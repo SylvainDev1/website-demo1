@@ -82,15 +82,6 @@ a:hover{
       .cardprice{
         flex-direction: column;
       }
-
-      /* .footer{
-        background-color: #5e9ad9;
-        justify-content: start;
-      } */
-      /* .footer-text, .footer-span{
-        margin: 0;
-      } */
-
   }
 
 .btn-contact{
